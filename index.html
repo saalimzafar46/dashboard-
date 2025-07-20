@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Q&A Dashboard</title>
+<style>
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    margin: 20px;
+    color: #333;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1f2937;
+  }
+  .dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .qa-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px 25px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .icon {
+    flex-shrink: 0;
+  }
+  .icon svg {
+    width: 36px;
+    height: 36px;
+    fill: #3b82f6;
+  }
+  .qa-text {
+    flex-grow: 1;
+  }
+  .question {
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #111827;
+  }
+  .answer {
+    font-size: 1em;
+    color: #4b5563;
+  }
+  @media (min-width: 600px) {
+    .dashboard {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Simple Q&amp;A Dashboard</h1>
+
+<div class="dashboard">
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">What is the capital of France?</div>
+      <div class="answer">Paris.</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">How many continents are there?</div>
+      <div class="answer">Seven.</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">What is the boiling point of water?</div>
+      <div class="answer">100°C at sea level.</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">Who wrote "Romeo and Juliet"?</div>
+      <div class="answer">William Shakespeare.</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">What gas do plants absorb?</div>
+      <div class="answer">Carbon dioxide (CO₂).</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">Which planet is known as the Red Planet?</div>
+      <div class="answer">Mars.</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">What is H₂O commonly known as?</div>
+      <div class="answer">Water.</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">Who painted the Mona Lisa?</div>
+      <div class="answer">Leonardo da Vinci.</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">What is the largest ocean on Earth?</div>
+      <div class="answer">Pacific Ocean.</div>
+    </div>
+  </div>
+
+  <div class="qa-card">
+    <div class="icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="#3b82f6" stroke-width="2" fill="none"/>
+        <text x="12" y="16" font-size="12" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif">Q</text>
+      </svg>
+    </div>
+    <div class="qa-text">
+      <div class="question">How many legs does a spider have?</div>
+      <div class="answer">Eight.</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
